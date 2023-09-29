@@ -8,7 +8,9 @@ import Link from "next/link";
 titleFont;
 
 export default function Newsletter() {
-  document.body.style.backgroundColor = "#66205B";
+  if (typeof window !== "undefined") {
+    document.body.style.backgroundColor = "#66205B";
+  }
 
   const controls = useAnimation();
   const ref = useRef(null);

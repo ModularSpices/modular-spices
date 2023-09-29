@@ -3,7 +3,9 @@ import Image from "next/image";
 import Animation from "./components/Animation";
 
 export default function Home() {
-  document.body.style.backgroundColor = "#F095F9";
+  if (typeof window !== "undefined") {
+    document.body.style.backgroundColor = "#F095F9";
+  }
 
   return (
     <div className=" bg-[#F095F9] h-full flex justify-center items-center">

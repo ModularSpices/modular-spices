@@ -2,7 +2,9 @@
 import { titleFont } from "@/utils/fonts";
 
 export default function Mission() {
-  document.body.style.backgroundColor = "#6A8B30";
+  if (typeof window !== "undefined") {
+    document.body.style.backgroundColor = "#6A8B30";
+  }
   return (
     <div className="bg-[#6A8B30] min-h-screen">
       <section className="flex flex-col items-center justify-center mx-8 relative">

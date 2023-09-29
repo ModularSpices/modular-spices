@@ -9,7 +9,9 @@ import Link from "next/link";
 import ReactCurvedText from "react-curved-text";
 
 export default function Products() {
-  document.body.style.backgroundColor = "#E5E5E0";
+  if (typeof window !== "undefined") {
+    document.body.style.backgroundColor = "#E5E5E0";
+  }
 
   const controls = useAnimation();
   const ref = useRef(null);
