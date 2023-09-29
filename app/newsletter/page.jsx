@@ -39,6 +39,7 @@ export default function Newsletter() {
             height="3000"
             width="3000"
             alt="Product mockup"
+            priority
           />
           <Image
             className="sm:hidden drop-shadow-[0_8px_8px_#684929] w-full h-full object-cover"

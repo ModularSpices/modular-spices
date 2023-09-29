@@ -40,6 +40,7 @@ export default function Products() {
             height="500"
             width="500"
             alt="Product mockup"
+            priority
           />
           <div
             className={`${titleFont.className} uppercase absolute top-6 lg:-top-6 -left-[48%] lg:left-0 m-0 lg:-ml-20 scale-[52%] sm:scale-100`}
