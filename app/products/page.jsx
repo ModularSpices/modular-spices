@@ -82,7 +82,7 @@ export default function Products() {
             initial={{ opacity: 1 }}
             animate={controls}
             transition={{ duration: 0 }}
-            className="absolute -bottom-9 sm:-bottom-5 scale-[70%] sm:scale-0 m-auto left-0 right-0"
+            className="absolute -bottom-9 sm:-bottom-5 scale-[70%] sm:scale-100 m-auto left-0 right-0"
             width="60"
             height="60"
           />

@@ -1,7 +1,7 @@
 "use client";
 import { titleFont } from "@/utils/fonts";
 import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -11,6 +11,7 @@ export default function Newsletter() {
   document.body.style.backgroundColor = "#66205B";
 
   const controls = useAnimation();
+  const ref = useRef(null);
 
   useEffect(() => {
     const updateOpacity = () => {
@@ -57,7 +58,7 @@ export default function Newsletter() {
             initial={{ opacity: 1 }}
             animate={controls}
             transition={{ duration: 0 }}
-            className="absolute -bottom-9 sm:-bottom-5 scale-[70%] m-auto left-0 right-0"
+            className="absolute -bottom-9 sm:-bottom-5 scale-[70%] sm:scale-100 m-auto left-0 right-0"
             width="60"
             height="60"
           />
