@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0; */
+  }
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+main {
+  height: 35vh;
+  scroll-snap-align: start;
+  scroll-margin-top: 100px;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+  /* background-color: "#F095F9"; */
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+.rotating-curved-text {
+  -webkit-animation: spin 30s linear infinite;
+  -moz-animation: spin 30s linear infinite;
+  animation: spin 30s linear infinite;
+  text-shadow: 2px 2px 5px #66205b;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rectAnimation {
+  0% {
+    width: 45px;
+    height: 24px;
+    fill: #d9d9d9;
+  }
+  100% {
+    width: 30px;
+    height: 15px;
+    fill: #a9a9a9;
+  }
+}
+
+.animated-rect {
+  animation: rectAnimation 3s infinite alternate; /* 3 seconds duration, infinite loop, alternate back and forth */
+}
+
+#frame1,
+#frame2,
+#frame3,
+#frame4 {
+  opacity: 0;
+}
+
+#frame1 {
+  opacity: 1;
+}
+
+#frame1,
+#frame2,
+#frame3,
+#frame4 {
+  opacity: 0;
+}
+
+#frame1 {
+  opacity: 1;
+}
+
+@keyframes animateFrames {
+  0%,
+  24% {
+    opacity: 1;
+  }
+  25%,
+  49% {
+    opacity: 0;
+  }
+  50%,
+  74% {
+    opacity: 0;
+  }
+  75%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateFrames2 {
+  0%,
+  24% {
+    opacity: 0;
+  }
+  25%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  74% {
+    opacity: 0;
+  }
+  75%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateFrames3 {
+  0%,
+  24% {
+    opacity: 0;
+  }
+  25%,
+  49% {
+    opacity: 0;
+  }
+  50%,
+  74% {
+    opacity: 1;
+  }
+  75%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animateFrames4 {
+  0%,
+  24% {
+    opacity: 0;
+  }
+  25%,
+  49% {
+    opacity: 0;
+  }
+  50%,
+  74% {
+    opacity: 0;
+  }
+  75%,
+  100% {
+    opacity: 1;
+  }
+}
+
+#frame1 {
+  animation: animateFrames 3s infinite;
+}
+
+#frame2 {
+  animation: animateFrames2 3s infinite;
+}
+
+#frame3 {
+  animation: animateFrames3 3s infinite;
+}
+
+#frame4 {
+  animation: animateFrames4 3s infinite;
+}
