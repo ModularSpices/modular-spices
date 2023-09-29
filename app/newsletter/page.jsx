@@ -66,13 +66,13 @@ export default function Newsletter() {
       <main className="mx-8 h-[100vh]" ref={ref}>
         <div className="columns-1 md:columns-2 text-[#E5E5E0] mt-4 leading-[1.2rem] sm:leading-[1.3rem] sm:mt-2 text-xl sm:text-2xl pb-10">
           <p className="">
-            At Modular Spices, we're all about elevating your culinary
+            {`At Modular Spices, we're all about elevating your culinary
             experience. Our newsletter is your gateway to a world of flavor,
             creativity, and culinary adventure. Join us as we share innovative
             recipes, insider tips, and cooking hacks that will transform your
             meals into gourmet masterpieces. Whether you're a kitch- en newbie
             or a seasoned chef, come spice up your life with us. Subscribe now
-            to receive our updates filled with flavor-packed inspiration.
+            to receive our updates filled with flavor-packed inspiration.`}
           </p>
           <span className="text-[#E5E5E0] mt-8 inline-block text-right w-full">
             <Link
